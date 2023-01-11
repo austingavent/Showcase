@@ -61,6 +61,9 @@ There was an overwhelming amount of results when there are many perimeters teste
 
 ![image](https://user-images.githubusercontent.com/122204322/211847509-ca703cbb-1efb-4381-ba59-69dc49a308d2.png)
 
+Here is an example of a results print out. I will attach a csv of these results, first_final, that will serve as an example.
+![image](https://user-images.githubusercontent.com/60438049/211848075-a7719b02-86e3-4b2a-b90c-353b037bec6e.png)
+
 ## Insights and challenges
 
 *   It Pays to Pay for Big Data!
@@ -72,7 +75,8 @@ There was an overwhelming amount of results when there are many perimeters teste
     *   Long Run Times/Delays with respect to Trial and Error
 
 
-*   Lessons Learned
+*   Moving Forward
+    *   Finish visualizing results
     *   Smaller Data Sets
     *   Perhaps Less Breadth and Scale  
 
