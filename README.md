@@ -1,5 +1,5 @@
 # Showcase
-##Introduction
+## Introduction
 Welcome to my repo. This project was the love child of a simple idea I had: by selling out of the money options, you could still make money even if your predictors weren't consistent.
 By selling options far from the money, one can still collect premiums even if they are wrong about direction of the underlying. Using this logic, I employed several machine learning programs targeting the price on several different time perimeters.  
 These programs used features and signals, such as bollinger crossovers, as training. The results are exported in various directories grouped by various different features. The program is designed with a pipeline function that intakes symbols as a list then reads data, generates features, signals, and results.
