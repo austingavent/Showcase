@@ -56,6 +56,10 @@ This was a group project for UC Berkeley's fintech bootcamp. However, my contrib
 *   Underlying/Covered (Short) Calls
 *   Underlying/Selling (Short) Puts  
 
+##  Results
+There was an overwhelming amount of results when there are many perimeters tested using different strageties and different machine learning programs. The average and mean are slightly above average. More time and energy would need to be applied to refine strageties and targets after learning from our results. Here is a screenshot of the directory of results.
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c9956c4a-a4d2-47dd-bedb-d3df2476f249/Untitled.png)
 
 ## Insights and challenges
 
