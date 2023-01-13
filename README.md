@@ -1,10 +1,9 @@
 # Showcase
 ## Introduction
-Welcome to my repo. This project was the love child of a simple idea I had: by selling out of the money options, you could still make money even if your predictors weren't consistent.
-By selling options far from the money, one can still collect premiums even if they are wrong about direction of the underlying. Using this logic, I employed several machine learning programs targeting the price on several different time perimeters.  
-These programs used features and signals, such as bollinger crossovers, as training. The results are exported in various directories grouped by various different features. The program is designed with a pipeline function that intakes symbols as a list then reads data, generates features, signals, and results.
+Welcome to my repo. This project was the love child of a simple idea I had, that led me to take a coding bootcamp: you can make money selling options even if you're wrong about the direction of the underlying.
+By selling options far from the money, one can still collect premiums even if they are wrong about direction of the underlying. The question becomes if one were to create an imperfect predictor, how much would they need to be right to still make money? For prediction, we worked on long term short memory and random forest programs in class. I employed these machine learning programs targeting the price, training on bollinger and volume signals.  The ML outputs a 1, 0, or -1 signal in which I test its return using 8 different options strategies under many perimeter conditions. The results are exported in directories the program created grouped by various different features. The program is designed with a pipeline function that intakes symbols as a list then reads data, generates features, signals, and results. In the future, I plan on making this command line ready program that could be used to gather research.
 
-This was a group project for UC Berkeley's fintech bootcamp. However, my contribution included the entireity of the new processor python file which contains all of the code except for machine learning files used to generate signals.
+This was a group project for UC Berkeley's fintech bootcamp. My contribution included the entireity of the main file which contains all of the code except for machine learning files used to generate signals. My classmate worked on adapting the machine learning code for the project.  
 
 
 ## Approach: strategies and tools  
