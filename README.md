@@ -1,9 +1,22 @@
 # Showcase
 ## Introduction
-Welcome to my repo. This project was the love child of a simple idea I had, that led me to take a coding bootcamp: you can make money selling options even if you're wrong about the direction of the underlying.
-By selling options far from the money, one can still collect premiums even if they are wrong about direction of the underlying. The question becomes if one were to create an imperfect predictor, how much would they need to be right to still make money? For prediction, we worked on long term short memory and random forest programs in class. I employed these machine learning programs targeting the price, training on bollinger and volume signals.  The ML outputs a 1, 0, or -1 signal in which I test its return using 8 different options strategies under many perimeter conditions. The results are exported in directories the program created grouped by various different features. The program is designed with a pipeline function that intakes symbols as a list then reads data, generates features, signals, and results. In the future, I plan on making this command line ready program that could be used to gather research.
+This project enables trade researchers to backtest complex option strategies with easy to configure parameters. While I did build out a ML model to produce signals, the ultimate goal is empower traders, with their weeks out predictions, the ability to test various option strategies- including spreads. Currently I am developing to improve CLI functionality with hopes of implementing visualization soon. Long term, I plan to make this a web app with the possibility of deploying paid for services to the public. 
 
-This was a group project for UC Berkeley's fintech bootcamp. My contribution included the entireity of the main file which contains all of the code except for machine learning files used to generate signals. My classmate worked on adapting the machine learning code for the project.  
+About the financial side:
+This project was inspired during a period of frequent trading where I developed an interest in the hedging capabilities of spreads. Spreads cut potential losses, by being open an opposing position further out. You can sell spreads, where you hope to capitalize on time decay of options in hopes of selling an option that will expire. You can sell spreads further from your predicted price, being further away from the money allows a certain amount margin of error. The genesis of this project was c
+
+Technical overview:
+The first iterations of this project were done in a fintech bootcamp.That being my first exposure to programming, meant time constraints clashed with inexperience. The biggest problem with the first iterations was managing the large amount of data I purchased- 120gb of csvs. The latest iteration, which I'm still developing, hosts data in a SQL database. 
+
+Technical process:
+1. A symbol and time frame starts a query, first we check if the query was already performed- if so then we reproduce the processed data. Otherwise we query the raw data and perform processing for signals
+
+2. Various ML models are trained on the signals, predicting a week and two weeks out if the stock will go down or go up. These models produce signals: 1, 0, -1. 
+
+3. The signals dictate bullish or bearish positions for all spread, call, and puts in a certain range of tolerance and time parameters.
+
+4. Results with metrics are calculated and grouped. This will soon include visualization and tools to gain insights on risk factors regarding each strategy.
+
 
 
 ## Approach: strategies and tools  
@@ -22,7 +35,6 @@ This was a group project for UC Berkeley's fintech bootcamp. My contribution inc
     <https://docs.python.org/3/library/itertools.html>
 *   Streamlit - the fastest way to build and share data apps  
     <https://streamlit.io/>
-*   ML Libraries: RF and LSTM
 *   Data Source: Yahoo Finance and Discount Option Data
 
 ## Code
